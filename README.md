@@ -1,8 +1,10 @@
 REQUIREMENTS
+
 	This script written for Ubuntu server, but it probably works just fine with Linux distros, as well as MacOS. 
 	Yes, I am aware of SirToffski's Wireguard-Ligase repo. This is something I wanted to learn (and do) myself.
 
 IMPORTANT
+	
 	This is a simple script for generating [Peer] private, public, and shared keys, and [Peer] config files for a Wireguard VPN installation. 
 	It assumes you already have Wireguard installed on your system, have generated private and public keys for
 	your Wireguard server, have created the /etc/wireguard/configs and etc/wireguard/keys directories, as well as the 
@@ -11,6 +13,7 @@ IMPORTANT
 
 
 HOW TO USE
+
 1. Change Line 50 in the script echo "Endpoint = <server_public_ip_address>:51820" >> $device_conf
 		<server_public_ip_address> should be the public-facing address of your server or LAN, or 
 	    the DNS name where it is located (if it's the public IP of your home router, you should have forwarded
@@ -28,7 +31,7 @@ HOW TO USE
 		You can also configure it on the peer device's command line, but that's not in scope here. 
 9. Connect to your wireguard VPN. 
 
-NOTES:
+NOTES
 
 1. This script uses predefined VLAN and private ip subnets, which you can (should?) change. 
 		See item 4. below
