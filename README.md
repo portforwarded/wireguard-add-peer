@@ -1,15 +1,17 @@
 REQUIREMENTS
-
-	This script written for Ubuntu server, but it probably works just fine with Linux distros, as well as MacOS. 
-	Yes, I am aware of SirToffski's Wireguard-Ligase repo. This is something I wanted to learn (and do) myself.
+	
+	This script written for Ubuntu server, but it probably works just fine with Linux distros, 
+	as well as MacOS. Yes, I am aware of SirToffski's Wireguard-Ligase repo. This is 
+	something I wanted to learn (and do) myself.
 
 IMPORTANT
-	
-	This is a simple script for generating [Peer] private, public, and shared keys, and [Peer] config files for a Wireguard VPN installation. 
-	It assumes you already have Wireguard installed on your system, have generated private and public keys for
-	your Wireguard server, have created the /etc/wireguard/configs and etc/wireguard/keys directories, as well as the 
-	wg0.conf file with the [Interface] already configured. In the future I'd like to develop functionality to check and prompt the
-	user for these items if they have not already been created and configured. 
+		
+	This is a simple script for generating [Peer] private, public, and shared keys, and [Peer] config 
+	files for a Wireguard VPN installation. It assumes you already have Wireguard installed on your 
+	system, have generated private and public keys for your Wireguard server, have created the
+	/etc/wireguard/configs and etc/wireguard/keys directories, as well as the wg0.conf file with the 
+	[Interface] already configured. In the future I'd like to develop functionality to check and 
+	prompt the user for these items if they have not already been created and configured. 
 
 
 HOW TO USE
