@@ -42,7 +42,7 @@ echo "Modfied shared key permissions."
 echo "[Interface]" > $device_conf
 echo "Address = $ip_address_prefix.$ip_address_suffix/$subnet" >> $device_conf
 echo "PrivateKey = $(cat $device_priv_key)" >> $device_conf
-echo "DNS = 9.9.9.9, 149.112.112.112" >> $device_conf
+echo "DNS = 1.1.1.1" >> $device_conf
 echo "" >> $device_conf
 echo "[Peer]" >> $device_conf
 echo "PublicKey = $(cat $server_pub_key)" >> $device_conf
